@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@theme {
+    --font-inter: "Inter";
+    --font-grace: "Covered By Your Grace", cursive;
+    --color-btnBgOrange: rgba(255, 109, 44, 1);
+    --color-pColor:rgba(88, 89, 93, 1);
+}
+
+body{
+    font-family: Inter, sans-serif;
+}
+
+
+.btnStyle {
+    border: 2px solid #2E2F35;
+    box-shadow: 3px 3px 0px #2E2F35;
+    border-radius: 12px;
+}
