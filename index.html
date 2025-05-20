@@ -72,56 +72,45 @@
                                         <span class="hamburger-bottom"></span>
                                     </div>
                                 </div>
-
-
-                                <!-- mobile nav -->
-                                <div id="menu1" class="hidden fixed inset-0 bg-[#E0F8F2] z-[2000]">
-                                    <!-- container -->
-                                    <div>
-                                        <!-- white horizontal line -->
-                                        <div class="bg-white h-[65px] absolute top-2 w-full pt-[20px]">
-                                            <!-- navbar -->
-                                            <nav class="overflow-hidden">
-                                                <div class="flex justify-between items-center h-[65px] px-10">
-                                                    <!-- logo -->
-                                                    <div class="flex">
-                                                        <img src="./asset/logo.png" alt="logo" />
-                                                    </div>
-
-                                                    <!-- close icon -->
-                                                    <div>
-                                                        <div id="closeMenuBtn"
-                                                            class="text-center focus:outline-none cursor-pointer">
-                                                            <i class="fa-solid fa-x text-2xl text-black"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- mobile menu links -->
-                                                <div
-                                                    class="flex w-full flex-col items-center absolute top-[100px] p-8 space-y-7 right-0 drop-shadow-md">
-                                                    <a href="#" class="text-headerFontColor">Resources</a>
-                                                    <a href="#" class="text-headerFontColor">Success stories</a>
-                                                    <a href="#" class="text-headerFontColor">Company</a>
-                                                    <a href="#" class="text-headerFontColor">Pricing</a>
-                                                    <!-- Buttons -->
-                                                    <div class="space-x-4">
-                                                        <button
-                                                            class="btnStyle bg-white text-[15px] px-[22px] py-[13px]">
-                                                            Login
-                                                        </button>
-                                                        <button
-                                                            class="btnStyle bg-btnBgOrange text-white text-[14px] px-[25px] py-[13px]">
-                                                            Create free account
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </nav>
                     </div>
+                </div>
+                
+                <!-- mobile nav -->
+                <div id="menu1" class="hidden fixed inset-0 bg-[#E0F8F2] z-[2000]">
+                    <!-- white horizontal line -->
+
+                    <!-- navbar -->
+                    <nav class="overflow-hidden container">
+                        <div class="flex w-full justify-between items-center h-[65px] px-10">
+                            <!-- logo -->
+                            <div class="flex">
+                                <img src="./asset/logo.png" alt="logo" />
+                            </div>
+
+                            <!-- close icon -->
+                            <div id="closeMenuBtn" class="text-center cursor-pointer">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <!-- mobile menu links -->
+                        <div class="flex w-full container flex-col items-center p-8 space-y-7 drop-shadow-md">
+                            <a href="#" class="text-headerFontColor">Resources</a>
+                            <a href="#" class="text-headerFontColor">Success stories</a>
+                            <a href="#" class="text-headerFontColor">Company</a>
+                            <a href="#" class="text-headerFontColor">Pricing</a>
+                            <!-- Buttons -->
+                            <div class="space-x-4">
+                                <button class="btnStyle bg-white text-[15px] px-[22px] py-[13px]">
+                                    Login
+                                </button>
+                                <button class="btnStyle bg-btnBgOrange text-white text-[14px] px-[25px] py-[13px]">
+                                    Create free account
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
 
                 <!-- hero section -->
@@ -130,17 +119,18 @@
                 <div class="flex 2xl:container 2xl:mx-auto flex-col-reverse xl:flex-row pt-[208px] pb-[128px] px-10">
                     <!-- left -->
                     <div class="max-w-[793px]">
-                        <h1 class="text-7xl xl:text-[82px] font-bold text-offBlack leading-[90px] xl:leading-[96px]">
+                        <h1
+                            class="text-5xl md:text-7xl xl:text-[82px] font-bold text-offBlack leading-[70px] md:leading-[90px] xl:leading-[96px]">
                             Meet your <br /><span class="font-grace font-light text-[#009387]">favorite</span>
                             new (old) marketing channel.
                         </h1>
-                        <p class="text-[20px] w-[70%] mt-[25px]">
+                        <p class="text-md md:text-[20px] w-[70%] mt-[25px]">
                             Remarkable results. Easier than email. Postcard marketing
                             reinvented for modern ecommerce.
                         </p>
                         <div class="mt-12 flex gap-10">
                             <button
-                                class="btnStyle bg-btnBgOrange px-[66px] py-[22px] text-[13px] font-bold text-white tracking-[1.2px]">
+                                class="btnStyle bg-btnBgOrange px-[10px] md:px-[66px] max-py-[22px] text-[13px] font-bold text-white tracking-[1.2px]">
                                 TRY IT RISK-FREE
                             </button>
                             <div class="flex flex-col py-1.5 justify-between items-start">
@@ -877,10 +867,11 @@
                 <div class="flex flex-col-reverse md:flex-row container mx-auto px-5 lg:px-10">
                     <!-- left -->
                     <div class="md:w-1/2 mb-[95px] md:my-[95px]">
-                        <h1 class="text-[81px] text-white font-bold leading-[96px]">Try PostPilot Risk-Free</h1>
+                        <h1 class="text-6xl lg:text-[81px] text-white font-bold leading-[96px]">Try PostPilot Risk-Free
+                        </h1>
                         <p class="text-white text-[20px] font-medium mt-4">No contracts. No commitments. Guaranteed
                             results.*</p>
-                        <div class="mt-12 flex gap-10">
+                        <div class="mt-12 flex gap-5 md:gap-10">
                             <button
                                 class="btnStyle bg-white px-[44px] py-[22px] text-[13px] font-bold text-offBlack tracking-[1.2px]">
                                 GET STARTED
@@ -916,30 +907,33 @@
                 <!-- flex container -->
                 <div class="flex flex-col items-center">
                     <!-- heading -->
-                    <div class="flex flex-col items-center pt-[95px]">
-                        <h1 class="text-4xl lg:text-[68px] font-bold tracking-tighter text-center">
+                    <div class="flex flex-col items-center pt-[95px] ">
+                        <h1 class="text-3xl md:text-4xl lg:text-[68px] font-bold tracking-tighter text-center">
                             Latest trends &
                             <span class="font-grace font-light text-[#009387] tracking-tighter">insights</span>
                         </h1>
                         <!-- trends cards container -->
                         <div
-                            class="flex flex-col xl:flex-row w-[1290px] mt-[74px] mb-24 gap-[30px] justify-between items-center xl:items-start">
+                            class="flex flex-col xl:flex-row w-[1290px] mt-[74px] mb-24 gap-[30px] justify-between items-center xl:items-start px-5">
                             <!-- item 1 -->
-                            <div class="max-w-[410px] space-y-5">
+                            <div class="max-w-[310px] md:max-w-[410px] space-y-5 px-3">
                                 <img src="./asset/section-9/image1.png" alt="image 1">
-                                <h2 class="text-[28px] font-bold text-offBlack leading-[36px]">3 Low-Cost Campaigns You
+                                <h2 class="text-2xl text-center md:text-[28px] font-bold text-offBlack leading-[36px]">3
+                                    Low-Cost Campaigns You
                                     Must Run to Win BFCM</h2>
                             </div>
                             <!-- item 2 -->
-                            <div class="max-w-[410px] space-y-5">
+                            <div class="max-w-[310px] md:max-w-[410px] space-y-5 px-3">
                                 <img src="./asset/section-9/image2.png" alt="image 2">
-                                <h2 class="text-[28px] font-bold text-offBlack leading-[36px]">Postcard Marketing: The
+                                <h2 class="text-2xl text-center md:text-[28px] font-bold text-offBlack leading-[36px]">
+                                    Postcard Marketing: The
                                     Definitive Guide to High ROI [2022]</h2>
                             </div>
                             <!-- item 3 -->
-                            <div class="max-w-[410px] space-y-5">
+                            <div class="max-w-[310px] md:max-w-[410px] space-y-5 px-3">
                                 <img src="./asset/section-9/image3.png" alt="image 3">
-                                <h2 class="text-[28px] font-bold text-offBlack leading-[36px]">The Ultimate Guide to
+                                <h2 class="text-2xl text-center md:text-[28px] font-bold text-offBlack leading-[36px]">
+                                    The Ultimate Guide to
                                     Thank You Notes for Ecommerce</h2>
                             </div>
                         </div>
