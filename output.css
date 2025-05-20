@@ -43,6 +43,7 @@
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-inter: "Inter";
     --font-grace: "Covered By Your Grace", cursive;
     --color-btnBgOrange: rgba(255, 109, 44, 1);
     --color-pColor: rgba(88, 89, 93, 1);
@@ -406,6 +407,9 @@
   }
   .w-max {
     width: max-content;
+  }
+  .max-w-\[180px\] {
+    max-width: 180px;
   }
   .max-w-\[310px\] {
     max-width: 310px;
@@ -870,11 +874,17 @@
   .text-\[23px\] {
     font-size: 23px;
   }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
   .text-\[42px\] {
     font-size: 42px;
   }
   .text-\[60px\] {
     font-size: 60px;
+  }
+  .text-\[81px\] {
+    font-size: 81px;
   }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
@@ -1024,6 +1034,49 @@
       }
     }
   }
+  .max-sm\:max-w-\[410px\] {
+    @media (width < 40rem) {
+      max-width: 410px;
+    }
+  }
+  .sm\:w-auto {
+    @media (width >= 40rem) {
+      width: auto;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:space-y-0 {
+    @media (width >= 40rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
+  .sm\:space-x-4 {
+    @media (width >= 40rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .sm\:px-\[22px\] {
+    @media (width >= 40rem) {
+      padding-inline: 22px;
+    }
+  }
+  .sm\:px-\[25px\] {
+    @media (width >= 40rem) {
+      padding-inline: 25px;
+    }
+  }
   .md\:absolute {
     @media (width >= 48rem) {
       position: absolute;
@@ -1119,6 +1172,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .md\:text-\[20px\] {

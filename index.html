@@ -9,6 +9,9 @@
     <link href="styles.css?v=1.1" rel="stylesheet">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/990ff5ad1c.js" crossorigin="anonymous"></script>
+    <!-- CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
 
 <body class="overflow-x-hidden">
@@ -83,7 +86,7 @@
                     <div class="bg-white h-[65px] absolute top-2 w-full pt-[20px]">
                         <!-- navbar -->
                         <nav class="overflow-hidden container">
-                            <div class="flex w-full justify-between items-center h-[65px] px-10">
+                            <div class="max-sm:max-w-[410px] flex w-full justify-between items-center h-[65px] px-10">
                                 <!-- logo -->
                                 <div class="flex">
                                     <img src="./asset/logo.png" alt="logo" />
@@ -95,13 +98,13 @@
                                 </div>
                             </div>
                             <!-- mobile menu links -->
-                            <div class="flex w-full container flex-col items-center p-8 space-y-7 drop-shadow-md">
+                            <div class="max-sm:max-w-[410px] flex flex-col items-center p-8 space-y-7 drop-shadow-md">
                                 <a href="#" class="text-headerFontColor">Resources</a>
                                 <a href="#" class="text-headerFontColor">Success stories</a>
                                 <a href="#" class="text-headerFontColor">Company</a>
                                 <a href="#" class="text-headerFontColor">Pricing</a>
                                 <!-- Buttons -->
-                                <div class="space-x-4">
+                                <div class="space-x-4 flex flex-col gap-5">
                                     <button class="btnStyle bg-white text-[15px] px-[22px] py-[13px]">
                                         Login
                                     </button>
@@ -789,8 +792,10 @@
                     <!-- right -->
                     <div class="lg:w-1/2 space-y-9">
                         <!-- header -->
-                        <h1 class="text-[42px] xl:text-[63px] font-bold -tracking-0.5 leading-[66px] md:leading-[76px] ">How <span
-                                class="text-[#009387] font-grace">Obvi</span> Drives Profits with Hands-Off Postcard
+                        <h1
+                            class="text-[42px] xl:text-[63px] font-bold -tracking-0.5 leading-[66px] md:leading-[76px] ">
+                            How <span class="text-[#009387] font-grace">Obvi</span> Drives Profits with Hands-Off
+                            Postcard
                             Campaigns</h1>
                         <!-- other details -->
                         <div class="space-y-12">
