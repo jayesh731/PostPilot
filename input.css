@@ -6,10 +6,13 @@
     --font-inter: "Inter";
     --font-grace: "Covered By Your Grace", cursive;
     --color-btnBgOrange: rgba(255, 109, 44, 1);
-    --color-pColor:rgba(88, 89, 93, 1);
+    --color-pColor: rgba(88, 89, 93, 1);
+    --color-h3Light: rgba(46, 47, 53, 0.4);
+    --color-h3Dark: rgba(46, 47, 53, 1);
+    --color-offBlack:rgba(46, 47, 53, 1);
 }
 
-body{
+body {
     font-family: Inter, sans-serif;
 }
 
@@ -19,3 +22,17 @@ body{
     box-shadow: 3px 3px 0px #2E2F35;
     border-radius: 12px;
 }
+
+/* Slider */
+.slider {
+    animation: slide-left 25s linear infinite;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
