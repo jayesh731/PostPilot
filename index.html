@@ -17,11 +17,11 @@
             <div class="bg-[#E0F8F2] relative 2xl:container 2xl:mx-auto ">
                 <!-- white horizontal line -->
                 <div class="bg-white h-[65px] absolute top-2 w-full pt-[20px] ">
-                    <div class="container mx-auto">
+                    <div>
                         <!-- navbar -->
                         <nav>
                             <!-- flex container -->
-                            <div class="flex w-full justify-between items-center h-[65px] lg:px-10">
+                            <div class="flex w-full justify-between items-center h-[65px] px-10">
                                 <!-- left -->
                                 <div class="flex">
                                     <img src="./asset/logo.png" alt="logo" />
@@ -61,6 +61,14 @@
                                         </button>
                                     </div>
                                 </div>
+                                <!-- Hamburger icon -->
+                                <div class="xl:hidden">
+                                    <div id="openMenuBtn" class="block hamburger focus:outline-none">
+                                        <span class="hamburger-top"></span>
+                                        <span class="hamburger-center"></span>
+                                        <span class="hamburger-bottom"></span>
+                                    </div>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -69,10 +77,10 @@
                 <!-- hero section -->
                 <!-- <div class="relative pt-[208px] pb-[128px] "><h1>Meet your favorite new (old) marketing channel.</h1></div> -->
                 <!-- flex container -->
-                <div class="lg:container lg:mx-auto flex pt-[208px] pb-[128px] lg:px-10">
+                <div class="flex flex-col-reverse xl:flex-row pt-[208px] pb-[128px] px-10">
                     <!-- left -->
                     <div class="max-w-[793px]">
-                        <h1 class="text-[82px] font-bold text-offBlack leading-[96px]">
+                        <h1 class="text-7xl xl:text-[82px] font-bold text-offBlack leading-[90px] xl:leading-[96px]">
                             Meet your <br /><span class="font-grace font-light text-[#009387]">favorite</span>
                             new (old) marketing channel.
                         </h1>
@@ -98,10 +106,11 @@
                         </div>
                     </div>
                     <!-- right -->
-                    <div class="hidden lg:flex">
+                    <div class="hidden md:flex max-xl:relative max-xl:justify-end">
                         <img src="./asset/hero-left.png" alt="hero-left"
-                            class="h-[650px] w-[650px] absolute -right-10 top-[123px] z-1" />
-                        <img src="./asset/hero-left2.png" class="z-10 absolute bottom-0 right-0" alt="hero-left2" />
+                            class="h-[650px] w-[650px] xl:absolute -right-[10%] xl:-right-[5%] 2xl:right-0 top-[140px] z-1" />
+                        <img src="./asset/hero-left2.png" class="hidden md:block z-10 absolute bottom-0 right-0"
+                            alt="hero-left2" />
                     </div>
                 </div>
             </div>
@@ -813,11 +822,11 @@
         <!-- section 8 -->
         <section id="section8">
             <!-- container -->
-            <div class="bg-[#FF6D2C] 2xl:container 2xl:mx-auto">
+            <div class="bg-[#FF6D2C] 2xl:container 2xl:mx-auto overflow-hidden">
                 <!-- flex container -->
-                <div class="flex container mx-auto">
+                <div class="flex flex-col-reverse md:flex-row container mx-auto px-5 lg:px-10">
                     <!-- left -->
-                    <div class="lg:w-1/2 mt-[95px]">
+                    <div class="md:w-1/2 mb-[95px] md:my-[95px]">
                         <h1 class="text-[81px] text-white font-bold leading-[96px]">Try PostPilot Risk-Free</h1>
                         <p class="text-white text-[20px] font-medium mt-4">No contracts. No commitments. Guaranteed
                             results.*</p>
@@ -841,8 +850,10 @@
                             annual Shopify revenue.</p>
                     </div>
                     <!-- right -->
-                    <div class="lg:w-1/2">
-                        <img src="./asset/sec-8.png" alt="image">
+                    <div class="md:w-1/2 md:relative">
+                        <img src="./asset/sec-8.png"
+                            class="h-[600px] w-[596px] md:absolute left-[50px] xl:left-auto  2xl:right-[83.69px] bottom-0"
+                            alt="image">
                     </div>
                 </div>
             </div>
@@ -853,16 +864,16 @@
             <!-- container -->
             <div class="bg-[#F3FAFA] 2xl:container 2xl:mx-auto">
                 <!-- flex container -->
-                <div class="">
+                <div class="flex flex-col items-center">
                     <!-- heading -->
                     <div class="flex flex-col items-center pt-[95px]">
                         <h1 class="text-4xl lg:text-[68px] font-bold tracking-tighter text-center">
                             Latest trends &
                             <span class="font-grace font-light text-[#009387] tracking-tighter">insights</span>
                         </h1>
-                        <!-- trends cards -->
+                        <!-- trends cards container -->
                         <div
-                            class="flex flex-col xl:flex-row w-[1290px] mt-[74px] mb-24 gap-[30px] justify-between items-start ">
+                            class="flex flex-col xl:flex-row w-[1290px] mt-[74px] mb-24 gap-[30px] justify-between items-center xl:items-start">
                             <!-- item 1 -->
                             <div class="max-w-[410px] space-y-5">
                                 <img src="./asset/section-9/image1.png" alt="image 1">
@@ -892,7 +903,7 @@
             <!-- container -->
             <div class="bg-white 2xl:container 2xl:mx-auto">
                 <!-- flex container -->
-                <div class="flex px-[75px] py-[96px] justify-between">
+                <div class="flex flex-wrap px-10 md:px-[75px] py-[96px] justify-between space-y-[27px]">
                     <div class="w-[295px] space-y-[25px]">
                         <img src="./asset/f-logo.png" alt="footer logo">
                         <p class="text-[14px] text-[#58595D]">Our paper is sourced from FSC-certified mills. We plant
@@ -902,7 +913,7 @@
                     <div class="space-y-[27px]">
                         <h5 class="text-[13px] font-bold text-offBlack tracking-[1.5px]">COMPANY</h5>
                         <div class="flex justify-between">
-                            <ul class="[&_li]:text-[16px] [&_li]:font-medium [&_li]:text-[#2E2F35]  ">
+                            <ul class="[&_li]:text-[16px] [&_li]:font-medium [&_li]:text-[#2E2F35] space-y-[13px] ">
                                 <li>About us</li>
                                 <li>Partner program</li>
                                 <li>Career</li>
@@ -912,7 +923,7 @@
                         </div>
                     </div>
                     <div>
-                        <ul class="pt-[44px]">
+                        <ul class="pt-[44px] space-y-[13px]">
                             <li>Pricing</li>
                             <li>Reviews</li>
                             <li>Direct Mail Academy</li>
@@ -930,12 +941,15 @@
                         <p class="text-pColor">Printed with ❤️️️ at our facility in South Carolina.</p>
                     </div>
                 </div>
-                <div class="container mx-auto">
+                <div class="2xl:container 2xl:mx-auto">
                     <hr class="text-[#E6E6E7]">
-                    <div class="py-[49px] flex justify-between items-center">
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-center px-10 md:px-[75px] py-[49px] max-md:space-y-10">
                         <!-- left -->
-                        <div>
-                            <img src="./asset/logo.png" alt="">
+                        <div class="flex flex-col items-center md:items-start">
+                            <img src="./asset/f-main-logo.png" alt="footer logo main">
+                            <p class="text-pColor text-[14px] font-medium mt-[9px]">© 2022 PostPilot, Inc. All rights
+                                reserved.</p>
                         </div>
                         <!-- right -->
                         <!-- Buttons -->
@@ -944,7 +958,7 @@
                                 Login
                             </button>
                             <button class="btnStyle bg-btnBgOrange text-white text-[14px] px-[25px] py-[13px]">
-                                Create free account
+                                Try it for free
                             </button>
                         </div>
                     </div>
