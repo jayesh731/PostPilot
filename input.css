@@ -10,6 +10,8 @@
   --color-h3Light: rgba(46, 47, 53, 0.4);
   --color-h3Dark: rgba(46, 47, 53, 1);
   --color-offBlack: rgba(46, 47, 53, 1);
+  --shadow-nav: 0px 0px 2px #2E2F35;
+  --breakpoint-xs: 425px;
 }
 
 body {

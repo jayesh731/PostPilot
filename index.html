@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/990ff5ad1c.js" crossorigin="anonymous"></script>
     <!-- CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
 </head>
 
 <body class="overflow-x-hidden">
@@ -36,9 +36,16 @@
                                 <div class="gap-[19px] items-center hidden xl:flex">
                                     <!-- links container -->
                                     <div class="flex">
-                                        <div class="flex items-center px-[19px] gap-2.5">
+                                        <div class="relative group flex items-center px-[19px] gap-2.5">
                                             <a href="#">Resources</a>
-                                            <svg class="flex self-center" width="10" height="7" viewBox="0 0 10 7"
+                                            <div class="absolute top-6 bg-white hidden group-hover:block transition">
+                                                <div class="flex flex-col [&_a]:py-4 shadow-nav px-5 ">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                            </div>
+                                            <svg class="flex self-center rotate-180 group-hover:rotate-0 transition" width="10" height="7" viewBox="0 0 10 7"
                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8.58464 1.8335L5.2513 5.16683L1.91797 1.8335" stroke="#2E2F35"
                                                     stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="square" />
@@ -86,7 +93,7 @@
                     <div class="bg-white h-[65px] absolute top-2 w-full pt-[20px]">
                         <!-- navbar -->
                         <nav class="overflow-hidden container">
-                            <div class="max-sm:max-w-[410px] flex w-full justify-between items-center h-[65px] px-10">
+                            <div class="max-w-[340px] xs:max-w-[410px] max-sm:max-w-[410px] flex w-full justify-between items-center h-[65px] px-10">
                                 <!-- logo -->
                                 <div class="flex">
                                     <img src="./asset/logo.png" alt="logo" />
@@ -98,7 +105,7 @@
                                 </div>
                             </div>
                             <!-- mobile menu links -->
-                            <div class="max-sm:max-w-[410px] flex flex-col items-center p-8 space-y-7 drop-shadow-md">
+                            <div class="max-w-[340px] xs:max-w-[410px] flex flex-col items-center p-8 space-y-7 drop-shadow-md">
                                 <a href="#" class="text-headerFontColor">Resources</a>
                                 <a href="#" class="text-headerFontColor">Success stories</a>
                                 <a href="#" class="text-headerFontColor">Company</a>
